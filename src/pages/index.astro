@@ -1,5 +1,6 @@
 ---
 const name = "adaAstro";
+const items = ["Dog", "Cat", "Platypus"];
 ---
 
 <html lang="en">
@@ -12,5 +13,8 @@ const name = "adaAstro";
 	</head>
 	<body>
 		<h1>Hello world from {name}!</h1>
+		<ul>
+			{items.map((item) => <li>{item}</li>)}
+		</ul>
 	</body>
 </html>
